@@ -1,0 +1,70 @@
+@use "../abstracts";
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: abstracts.$text-color;
+  font: normal 125% / 1.4 abstracts.$primary-font;
+}
+
+.main-header {
+  font-size: 14px;
+  font-weight: 400;
+
+  .home-nav {
+    color: abstracts.$brand-color;
+
+    @include abstracts.on-event {
+      color: abstracts.$text-color;
+      text-decoration: underline;
+    }
+  }
+
+  .sign-in-nav {
+    color: abstracts.$brand-color;
+    text-decoration: underline;
+
+    @include abstracts.on-event {
+      color: abstracts.$text-color;
+      text-decoration: none;
+    }
+  }
+
+  .sign-up-nav {
+    color: abstracts.$light-grey;
+    padding: 12px 18px;
+    background-color: abstracts.$brand-color;
+
+    @include abstracts.on-event {
+      color: abstracts.$text-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.hero__text {
+  h1 {
+    font-family: abstracts.$secondary-font;
+    font-size: 44px;
+  }
+  p {
+    font-size: 18px;
+    color: abstracts.$mid-grey;
+    font-weight: 300;
+  }
+}
+
+.hero__list {
+  font-size: 14px;
+}
+
+.categories {
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 12px;
+    color: abstracts.$mid-grey;
+  }
+}

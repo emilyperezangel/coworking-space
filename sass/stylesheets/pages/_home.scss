@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.hero {
+  background-image: url("/img/hero-backgroung.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 430px;
+
+  &__text {
+    padding: 30px;
+    width: 50%;
+    margin-left: auto;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+
+    h1 {
+      margin: 0;
+      img {
+        margin: 10px 20px;
+        width: 60px;
+      }
+    }
+  }
+}
+
+.hero__list {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: -50px;
+  right: 80px;
+  ul {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 18px;
+    list-style: none;
+  }
+  img {
+    width: 12px;
+  }
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+
+  .category {
+    width: 230px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  img {
+    width: 60px;
+  }
+}
